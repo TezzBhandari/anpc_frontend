@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// enables mobile dropdown menu functionality
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.getElementsByClassName(
     "header__mob-nav-link-item--dropdown"
