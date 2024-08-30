@@ -33,6 +33,11 @@
   .header__main {
     display: block;
   }
+
+  /* mobile nav  */
+  .header__mob-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {

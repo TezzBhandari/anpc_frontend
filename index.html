@@ -89,23 +89,20 @@
       </div>
 
       <!-- header main  -->
-
       <div class="header__main hidden">
         <div class="container--fluid">
           <div class="header__main-wrapper">
             <nav class="header__main-nav-links flex items-center">
               <!-- link item -->
               <div class="header__main-nav-link capitalize">
-                <a class="block px-2 py-3" href="/">home</a>
+                <a class="inline-block px-2 py-3" href="/">home</a>
               </div>
 
               <!-- link item with dropdown  -->
               <div
                 class="header__main-nav-link header__main-nav-link--dropdown relative"
               >
-                <button
-                  class="header__main-link-dropbtn capitalize items-center gap-1 px-2 py-3"
-                >
+                <button class="inline-block px-2 py-3 capitalize">
                   <span>background</span>
                   <span class="header__main-link-dropbtn-icon">
                     <i class="fa-solid fa-chevron-down"></i>
@@ -126,9 +123,40 @@
           </div>
         </div>
       </div>
+
+      <!-- MOBILE NAV  -->
+      <div class="header__mob-nav fixed left-0 w-full" id="mobile-nav">
+        <nav class="header__mob-nav-links">
+          <div class="header__mob-nav-link">
+            <a class="header__mob-nav-link-item" href="/">home</a>
+          </div>
+          <!-- drop down link  -->
+          <div class="header__mob-nav-link header__nav-link--dropdown">
+            <button
+              class="header__mob-nav-link-item header__mob-nav-link-item--dropdown"
+            >
+              <span> about </span>
+              <span class="header__mob-drop-icon--right">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+              <span class="header__mob-drop-icon--down hidden">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </button>
+            <div class="header__mob-dropdown hidden">
+              <nav class="header__mob-dropdown-links flex flex-col">
+                <a href="/staffs" class="header__mob-dropdown-link">Staffs</a>
+                <a href="/board-memebers" class="header__mob-dropdown-link"
+                  >Board Members</a
+                >
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- main content  -->
-    <main></main>
+    <main>man content this si a mmmain sdjlfk</main>
     <!-- footer  -->
     <footer></footer>
     <!-- main script  -->
