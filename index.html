@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <!-- header main  -->
+      <!-- header mid  -->
       <div class="header__mid py-2">
         <div class="container--fluid">
           <div class="header__mid-wrapper flex items-center justify-between">
@@ -84,6 +84,45 @@
                 <i class="fa-solid fa-xmark"></i>
               </span>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main  -->
+
+      <div class="header__main hidden">
+        <div class="container--fluid">
+          <div class="header__main-wrapper">
+            <nav class="header__main-nav-links flex items-center">
+              <!-- link item -->
+              <div class="header__main-nav-link capitalize">
+                <a class="block px-2 py-3" href="/">home</a>
+              </div>
+
+              <!-- link item with dropdown  -->
+              <div
+                class="header__main-nav-link header__main-nav-link--dropdown relative"
+              >
+                <button
+                  class="header__main-link-dropbtn capitalize items-center gap-1 px-2 py-3"
+                >
+                  <span>background</span>
+                  <span class="header__main-link-dropbtn-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </button>
+                <div class="header__main-nav-dropdown absolute left-0">
+                  <nav class="header__main-nav-dropdown-links flex flex-col">
+                    <a class="header__main-dropdown-link" href="/about"
+                      >about</a
+                    >
+                    <a class="header__main-dropdown-link" href="/members"
+                      >members</a
+                    >
+                  </nav>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
       </div>

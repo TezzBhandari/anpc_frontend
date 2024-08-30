@@ -28,6 +28,11 @@
   .header__mob-nav-toggle {
     display: none;
   }
+
+  /* header main  */
+  .header__main {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1280px) {
