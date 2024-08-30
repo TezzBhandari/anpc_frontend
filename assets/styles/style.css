@@ -74,6 +74,7 @@ body {
   font-family: var(--primary-font-family);
   font-size: var(--fontSize-root);
   color: var(--primary-font-color);
+  background-color: var(--white-color);
   line-height: var(--lineHeight-normal);
 }
 
@@ -380,9 +381,71 @@ h6 {
   padding-top: var(--spacing-8);
   padding-bottom: var(--spacing-8);
 }
+/* border  */
+.border-red {
+  border: 1px solid red;
+}
 
-.anpc__container--fluid {
+.border-green {
+  border: 1px solid green;
+}
+
+/* display  */
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* position  */
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  inset: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+/* container  */
+.container--fluid {
   max-width: 1380px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+}
+
+/* header  */
+
+.header__top {
+  border-bottom: 1px solid #dee2e6;
 }
