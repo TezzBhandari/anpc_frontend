@@ -11,6 +11,33 @@
 }
 
 @media screen and (min-width: 1024px) {
+  /* header top  */
+  .header__top {
+    display: block;
+  }
+
+  /* header mid  */
+  .header__nepal-flag {
+    display: block;
+  }
+
+  .header__mid {
+    box-shadow: none;
+  }
+
+  .header__mob-nav-toggle {
+    display: none;
+  }
+
+  /* header main  */
+  .header__main {
+    display: block;
+  }
+
+  /* mobile nav  */
+  .header__mob-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
