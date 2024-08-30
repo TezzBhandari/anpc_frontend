@@ -28,24 +28,61 @@
         <div class="container--fluid">
           <div class="header__top-wrapper flex items-center justify-between">
             <!-- contact detail  -->
-            <div class="header__contact flex items-center gap-8">
-              <a class="header__contact-item flex items-center gap-2 py-1">
+            <div class="header__top-contact flex items-center gap-8">
+              <a class="header__top-contact-item flex items-center gap-2 py-1">
                 <span><i class="fa-solid fa-phone"></i> </span>
                 <span>97618447034</span>
               </a>
-              <a class="header__contact-item flex items-center gap-2 py-1">
+              <a class="header__top-contact-item flex items-center gap-2 py-1">
                 <span><i class="fa-solid fa-envelope"></i></span>
                 <span>info@akhil.com.np</span>
               </a>
             </div>
             <!-- social links  -->
-            <div class="header__social flex items-center gap-4">
-              <a class="header__social-item py-1">
+            <div class="header__top-social flex items-center gap-4">
+              <a class="header__top-social-item py-1">
                 <i class="fa-brands fa-square-facebook"></i>
               </a>
-              <a class="header__social-item py-1">
+              <a class="header__top-social-item py-1">
                 <i class="fa-brands fa-twitter"></i>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main  -->
+      <div class="header__mid py-2">
+        <div class="container--fluid">
+          <div class="header__mid-wrapper flex items-center justify-between">
+            <!-- logo  -->
+            <div class="header__logo">
+              <div class="header__logo-img">
+                <img
+                  src="./assets/logo/logo.png"
+                  alt="akhil nepal pharmacy council"
+                />
+              </div>
+            </div>
+
+            <!-- nepal flag  -->
+
+            <div class="header__nepal-flag hidden">
+              <div class="header__nepal-flag-img">
+                <img src="./assets/images/np_flag.gif" alt="flag of nepal" />
+              </div>
+            </div>
+
+            <!-- mobile toggle btn -->
+            <div class="header__mob-nav-toggle">
+              <!-- hamburger icon  -->
+              <span id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+              <!-- cross icon  -->
+              <span id="cross" class="hidden">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
             </div>
           </div>
         </div>
@@ -56,6 +93,6 @@
     <!-- footer  -->
     <footer></footer>
     <!-- main script  -->
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

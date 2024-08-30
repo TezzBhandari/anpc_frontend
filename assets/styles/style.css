@@ -46,6 +46,9 @@
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
   --lineHeight-relaxed: 1.625;
+
+  /* shadow  */
+  --header-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 *,
@@ -446,6 +449,27 @@ h6 {
 
 /* header  */
 
+/* header top  */
 .header__top {
   border-bottom: 1px solid #dee2e6;
+}
+
+/* header mid  */
+
+.header__mid {
+  box-shadow: var(--header-shadow);
+}
+
+.header__logo-img {
+  width: 5rem;
+  height: 3.5rem;
+}
+
+.header__nepal-flag-img {
+  width: 3rem;
+}
+
+#cross,
+#hamburger {
+  font-size: var(--fontSize-4);
 }
