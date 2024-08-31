@@ -654,57 +654,68 @@ h6 {
 }
 
 /* hero: news */
-.hero__tabs {
+.hero__tabs,
+.events__tabs {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 
-.hero__tab button {
+.hero__tab button,
+.events__tab button {
   padding: 0.5rem 1rem;
   text-transform: capitalize;
   letter-spacing: 0.5px;
 }
 
-.hero__active-tab[data-target-tab] {
+.hero__active-tab[data-target-tab],
+.events__active-tab[data-target-events-tab] {
   background-color: var(--secondary-color);
 }
 
-[data-tab-content] {
+[data-tab-content],
+[data-events-tab-content] {
   display: none;
 }
 
-.hero__active-tab-content[data-tab-content] {
+.hero__active-tab-content[data-tab-content],
+.events__active-tab-content[data-events-tab-content] {
   display: block;
 }
 
-.hero__tab-content-wrapper {
+.hero__tab-content-wrapper,
+.events__tab-content-wrapper {
   max-height: 300px;
   overflow-y: auto;
 }
 
-.hero__tab-content-news-item {
+.hero__tab-content-news-item,
+.events__tab-content-news-item {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #dee2e6;
 }
 
-.hero__tab-content-news-item a {
+.hero__tab-content-news-item a,
+.events__tab-content-news-item a {
   padding: 0.25rem 0.5rem;
 }
 
-.hero__tab-content-news-item a:hover {
+.hero__tab-content-news-item a:hover,
+.events__tab-content-news-item a:hover {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 
-.hero__tab-content-news-item h3 {
+.hero__tab-content-news-item h3,
+.events__tab-content-news-item h3 {
   margin: 0;
   font-size: var(--fontSize-1);
   font-weight: var(--fontWeight-medium);
   letter-spacing: 0.5px;
 }
 
-.hero__tab-content-news-item span {
+.hero__tab-content-news-item span,
+.events__tab-content-news-item span {
   line-height: var(--lineHeight-relaxed);
   font-size: var(--fontSize-0);
   font-weight: var(--fontWeight-semibold);
@@ -753,7 +764,8 @@ h6 {
 
 /* about  */
 .about__view-more,
-.members__view-more {
+.members__view-more,
+.events__view-more {
   background-color: var(--primary-color);
   color: var(--white-color);
   border-radius: 8px;
@@ -764,7 +776,8 @@ h6 {
 }
 
 .about__header-title h2,
-.members__header-title h2 {
+.members__header-title h2,
+.events__header-title h2 {
   margin: 0;
   text-transform: capitalize;
   line-height: var(--lineHeight-relaxed);

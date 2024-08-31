@@ -300,7 +300,7 @@
           <div class="about__wrapper">
             <div class="about__header">
               <div
-                class="about__header__wrapper flex items-center justify-between"
+                class="about__header-wrapper flex items-center justify-between"
               >
                 <div class="about__header-title">
                   <h2>about</h2>
@@ -480,6 +480,121 @@
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container--fluid py-2">
+          <div class="events__wrapper">
+            <div class="events__header">
+              <div
+                class="events__header-wrapper flex items-center justify-between"
+              >
+                <div class="events__header-title">
+                  <h2>Events</h2>
+                </div>
+                <a
+                  href="/events"
+                  class="events__view-more flex items-center gap-1 px-3 py-3"
+                >
+                  <span>view more</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="events__tab-wrapper">
+              <div class="events__tabs flex items-center">
+                <!-- recents tab  -->
+                <div class="events__tab">
+                  <button
+                    class="events__active-tab"
+                    data-target-events-tab="recents"
+                  >
+                    recents
+                  </button>
+                </div>
+                <!-- upcoming tab -->
+                <div class="events__tab">
+                  <button data-target-events-tab="upcoming">upcoming</button>
+                </div>
+                <!-- historic tab  -->
+                <div class="events__tab">
+                  <button data-target-events-tab="historic">historic</button>
+                </div>
+              </div>
+              <!-- tab content  -->
+              <div class="events__tab-content">
+                <div class="events__tab-content-wrapper">
+                  <!-- recents content  -->
+                  <div
+                    class="events__tab-content--recents events__active-tab-content"
+                    data-events-tab-content
+                    id="recents"
+                  >
+                    <div class="events__tab-content-news-list">
+                      <div class="events__tab-content-news-item">
+                        <a href="">
+                          <h3>This is a news title</h3>
+                          <span>5 ashar, 2081</span>
+                        </a>
+                      </div>
+                      <div class="events__tab-content-news-item">
+                        <a href="">
+                          <h3>this is second news</h3>
+                          <span>4 asar, 2018</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- recents content  -->
+                  <div
+                    class="events__tab-content--upcoming"
+                    data-events-tab-content
+                    id="upcoming"
+                  >
+                    <div class="events__tab-content-notice-list">
+                      <div class="events__tab-content-news-item">
+                        <a href="">
+                          <h3>This is a notice</h3>
+                          <span>5 ashar, 2081</span>
+                        </a>
+                      </div>
+                      <div class="events__tab-content-news-item">
+                        <a href="">
+                          <h3>this is second notice</h3>
+                          <span>4 asar, 2018</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- historic content  -->
+                  <div
+                    class="events__tab-content--historic"
+                    data-events-tab-content
+                    id="historic"
+                  >
+                    <div class="events__tab-content-news-item">
+                      <a href="">
+                        <h3>This is a publication</h3>
+                        <span>5 ashar, 2081</span>
+                      </a>
+                    </div>
+                    <div class="events__tab-content-news-item">
+                      <a href="">
+                        <h3>this is publication 2</h3>
+                        <span>4 asar, 2018</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
