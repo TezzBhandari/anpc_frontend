@@ -17,6 +17,11 @@
   .members__card {
     flex: 0 0 40%;
   }
+
+  .footer__main-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -105,6 +110,13 @@
 
   .members__card-detail-icon {
     display: none;
+  }
+
+  .footer__main-content-left,
+  .footer__main-content-right {
+    flex-direction: row;
+    flex: 1 1 0%;
+    justify-content: space-around;
   }
 }
 
