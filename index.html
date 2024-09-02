@@ -5,6 +5,7 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/base.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/media.css" />
     <link
@@ -300,7 +301,7 @@
           <div class="about__wrapper">
             <div class="about__header">
               <div
-                class="about__header__wrapper flex items-center justify-between"
+                class="about__header-wrapper flex items-center justify-between"
               >
                 <div class="about__header-title">
                   <h2>about</h2>
@@ -486,9 +487,186 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <div class="container--fluid py-2">
+          <div class="press__wrapper">
+            <div class="members__header">
+              <div
+                class="members__header__wrapper flex items-center justify-between"
+              >
+                <div class="members__header-title">
+                  <h2>Press</h2>
+                </div>
+                <a
+                  href="/press"
+                  class="members__view-more flex items-center gap-1 px-3 py-3"
+                >
+                  <span>view more</span>
+                  <span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="press__cards-wrapper flex flex-col gap-2">
+              <div class="press__cards-container--left">
+                <div class="press__card--left relative">
+                  <div class="press__card-img w-full h-full">
+                    <img
+                      class="block"
+                      src="./assets/images/download.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="press__card-description absolute">
+                    <h3>Lorem Ipsum</h3>
+                    <p>3 shrawan, 2090</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="press__cards-container--right flex flex-col gap-2">
+                <div class="press__card--right flex items-center">
+                  <div class="press__card-img--right">
+                    <img
+                      class="block"
+                      src="./assets/images/download.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="press__card-description--right">
+                    <h3>Lorem Ipsum</h3>
+                    <p>3 shrawan, 2081</p>
+                  </div>
+                </div>
+                <div class="press__card--right flex items-center">
+                  <div class="press__card-img--right">
+                    <img
+                      class="block"
+                      src="./assets/images/download.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="press__card-description--right">
+                    <h3>Lorem Ipsum</h3>
+                    <p>3 shrawan, 2081</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <!-- footer  -->
-    <footer></footer>
+    <footer>
+      <div class="container--fluid py-2">
+        <div class="footer__content-wrapper">
+          <div class="footer__main-content">
+            <!-- one  -->
+            <div class="footer__main-content-left">
+              <div class="footer__contact-info">
+                <!-- footer logo -->
+                <div class="footer__logo">
+                  <div class="footer__logo-img">
+                    <img src="./assets/logo/logo.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="footer__get-in-touch">
+                  <p class="flex items-center gap-2">
+                    <span>
+                      <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <span>977&#45;9761819535</span>
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <span>shankhamul, kathmandu</span>
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <span>
+                      <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span>registar@pharmacycouncil.org.np</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="footer__quick-links">
+                <h3>Quick Links</h3>
+                <div class="footer__quick-links-container flex flex-col">
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__quick-link"
+                    >News and Notice</a
+                  >
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__quick-link"
+                    >Highlights</a
+                  >
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__quick-link"
+                    >Events</a
+                  ><a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__quick-link"
+                    >Members</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- two  -->
+            <div class="footer__main-content-right">
+              <div class="footer__links">
+                <h3>Links</h3>
+                <div class="footer__links-container flex flex-col">
+                  <a href="/" class="footer__link">home</a
+                  ><a href="/contact" class="footer__link">contact</a
+                  ><a href="/about" class="footer__link">about</a>
+                </div>
+              </div>
+
+              <div class="footer__connect flex flex-col gap-10">
+                <div class="footer__connect-container">
+                  <h3>Connect With Us</h3>
+                  <div class="footer__socials-container flex flex-col">
+                    <a href="" class="footer__social flex gap-2">
+                      <span>
+                        <i class="fa-brands fa-square-facebook"></i>
+                      </span>
+                      <span>facebook</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright-separator"></div>
+          <div class="footer__copyright-content">
+            <h2>
+              Copyright 2024, Nepal Pharmacy Council. All rights reserved.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- main script  -->
     <script type="module" src="./assets/js/main.js"></script>
   </body>

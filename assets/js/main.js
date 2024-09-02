@@ -171,3 +171,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 2000);
 });
+
+// enables events tabs functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll("[data-target-events-tab]");
+  const tabContents = document.querySelectorAll("[data-events-tab-content]");
+
+  function hideAllTabs() {
+    for (const tab of tabs) {
+      tab.classList.remove("events__active-tab");
+    }
+  }
+
+  function hideAllTabContents() {
+    for (const tabContent of tabContents) {
+      tabContent.classList.remove("events__active-tab-content");
+    }
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = document.getElementById(tab.dataset.targetEventsTab);
+      hideAllTabs();
+      hideAllTabContents();
+      tab.classList.add("events__active-tab");
+      target.classList.add("events__active-tab-content");
+    });
+  });
+});
