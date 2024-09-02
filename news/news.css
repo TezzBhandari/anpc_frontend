@@ -6,7 +6,7 @@
   box-shadow: 0 2px 4px var(--content-box-shadow);
 }
 .news__thumbnail {
-  height: 200px;
+  height: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -15,7 +15,7 @@
     align-items: stretch;
     justify-content: center;
     gap: var(--spacing-3);
-    height: 300px;
+    height: 150px;
     padding: var(--spacing-2);
   }
 
@@ -25,7 +25,13 @@
   }
 
   .news__content {
+    flex: 0 0 70%;
     box-shadow: 0 2px 4px var(--content-box-shadow);
     border-radius: var(--spacing-2);
+    font-size: 12px;
+    padding-left: var(--spacing-2);
+  }
+  .news__content.news_description {
+    text-overflow: ellipsis;
   }
 }
