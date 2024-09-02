@@ -1,0 +1,31 @@
+.news__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--content-box-shadow);
+}
+.news__thumbnail {
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .news__card {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--spacing-3);
+    height: 300px;
+    padding: var(--spacing-2);
+  }
+
+  .news__thumbnail__wrapper {
+    flex: 0 0 30%;
+    height: 100%;
+  }
+
+  .news__content {
+    box-shadow: 0 2px 4px var(--content-box-shadow);
+    border-radius: var(--spacing-2);
+  }
+}
