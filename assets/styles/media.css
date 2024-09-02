@@ -11,6 +11,16 @@
   .members__card {
     flex: 0 0 50%;
   }
+
+  /* press  */
+
+  .press__card--right {
+    height: 200px;
+  }
+
+  .press__card--right {
+    height: 220px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -117,6 +127,23 @@
     flex-direction: row;
     flex: 1 1 0%;
     justify-content: space-around;
+  }
+
+  /* press  */
+  .press__cards-wrapper {
+    flex-direction: row;
+    gap: var(--spacing-6);
+  }
+
+  .press__cards-container--left {
+    flex: 1 1 0%;
+  }
+
+  .press__cards-container--right {
+    flex: 1 1 0%;
+  }
+  .press__card--left {
+    height: 100%;
   }
 }
 

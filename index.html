@@ -490,17 +490,17 @@
 
       <section>
         <div class="container--fluid py-2">
-          <div class="events__wrapper">
-            <div class="events__header">
+          <div class="press__wrapper">
+            <div class="members__header">
               <div
-                class="events__header-wrapper flex items-center justify-between"
+                class="members__header__wrapper flex items-center justify-between"
               >
-                <div class="events__header-title">
-                  <h2>Events</h2>
+                <div class="members__header-title">
+                  <h2>Press</h2>
                 </div>
                 <a
-                  href="/events"
-                  class="events__view-more flex items-center gap-1 px-3 py-3"
+                  href="/press"
+                  class="members__view-more flex items-center gap-1 px-3 py-3"
                 >
                   <span>view more</span>
                   <span>
@@ -510,110 +510,48 @@
               </div>
             </div>
 
-            <div class="events__tab-wrapper">
-              <div class="events__tabs flex items-center">
-                <!-- recents tab  -->
-                <div class="events__tab">
-                  <button
-                    class="events__active-tab"
-                    data-target-events-tab="recents"
-                  >
-                    recents
-                  </button>
-                </div>
-                <!-- upcoming tab -->
-                <div class="events__tab">
-                  <button data-target-events-tab="upcoming">upcoming</button>
-                </div>
-                <!-- historic tab  -->
-                <div class="events__tab">
-                  <button data-target-events-tab="historic">historic</button>
+            <div class="press__cards-wrapper flex flex-col gap-2">
+              <div class="press__cards-container--left">
+                <div class="press__card--left relative">
+                  <div class="press__card-img w-full h-full">
+                    <img
+                      class="block"
+                      src="./assets/images/download.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="press__card-description absolute">
+                    <h3>Lorem Ipsum</h3>
+                    <p>3 shrawan, 2090</p>
+                  </div>
                 </div>
               </div>
-              <!-- tab content  -->
-              <div class="events__tab-content">
-                <div class="events__tab-content-wrapper">
-                  <!-- recents content  -->
-                  <div
-                    class="events__tab-content--recents events__active-tab-content py-3"
-                    data-events-tab-content
-                    id="recents"
-                  >
-                    <div class="tab-content__wrapper">
-                      <div class="tab-content__card-container--left">
-                        <div class="events__card--left">
-                          <div class="border-green w-full h-full">
-                            <img src="./assets/images/download.jpeg" alt="" />
-                          </div>
-                          <div class="events__card-img--left">
-                            <img src="./assets/images/download.jpeg" alt="" />
-                          </div>
-                          <div class="events__card-description--left">
-                            <h3>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Odio, esse!
-                            </h3>
-                            <span>8 shrwan 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="tab-content__card-container--right">
-                        <div class="events__card">
-                          <div class="events__card-img">
-                            <img src="./assets/images/download.jpeg" alt="" />
-                          </div>
-                          <div class="events__card-description">
-                            <h3>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Debitis, laudantium!
-                            </h3>
-                            <p>9 shrawan, 2090</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <!-- recents content  -->
-                  <div
-                    class="events__tab-content--upcoming"
-                    data-events-tab-content
-                    id="upcoming"
-                  >
-                    <div class="events__tab-content-notice-list">
-                      <div class="events__tab-content-news-item">
-                        <a href="">
-                          <h3>This is a notice</h3>
-                          <span>5 ashar, 2081</span>
-                        </a>
-                      </div>
-                      <div class="events__tab-content-news-item">
-                        <a href="">
-                          <h3>this is second notice</h3>
-                          <span>4 asar, 2018</span>
-                        </a>
-                      </div>
-                    </div>
+              <div class="press__cards-container--right flex flex-col gap-2">
+                <div class="press__card--right flex items-center">
+                  <div class="press__card-img--right">
+                    <img
+                      class="block"
+                      src="./assets/images/download.jpeg"
+                      alt=""
+                    />
                   </div>
-
-                  <!-- historic content  -->
-                  <div
-                    class="events__tab-content--historic"
-                    data-events-tab-content
-                    id="historic"
-                  >
-                    <div class="events__tab-content-news-item">
-                      <a href="">
-                        <h3>This is a publication</h3>
-                        <span>5 ashar, 2081</span>
-                      </a>
-                    </div>
-                    <div class="events__tab-content-news-item">
-                      <a href="">
-                        <h3>this is publication 2</h3>
-                        <span>4 asar, 2018</span>
-                      </a>
-                    </div>
+                  <div class="press__card-description--right">
+                    <h3>Lorem Ipsum</h3>
+                    <p>3 shrawan, 2081</p>
+                  </div>
+                </div>
+                <div class="press__card--right flex items-center">
+                  <div class="press__card-img--right">
+                    <img
+                      class="block"
+                      src="./assets/images/download.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="press__card-description--right">
+                    <h3>Lorem Ipsum</h3>
+                    <p>3 shrawan, 2081</p>
                   </div>
                 </div>
               </div>
