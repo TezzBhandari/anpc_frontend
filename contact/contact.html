@@ -3,57 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>contact</title>
     <link rel="stylesheet" href="../assets/styles/normalize.css" />
     <link rel="stylesheet" href="../assets/styles/style.css" />
     <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/media.css" />
     <link rel="stylesheet" href="./contact.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
-    <div class="container--fluid">
-      <div class="main__wrapper">
-        <div class="contact__wrapper">
-          <div class="contact flex flex-col gap-8 px-8">
-            <div class="contact__form px-4">
-              <h2 class="capitalize">Contact Us</h2>
-              <form class="px-4 py-4">
-                <input
-                  class="capitalize"
-                  type="text"
-                  placeholder="our Name"
-                  required
-                />
-                <input
-                  class="capitalize"
-                  type="email"
-                  placeholder="Your Email"
-                  required
-                />
-                <input
-                  class="capitalize"
-                  type="tel"
-                  placeholder="Your Phone Number"
-                  required
-                />
-                <textarea
-                  class="capitalize"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-                <div class="captcha-container">
-                  <img
-                    src="/path/to/captcha/image"
-                    alt="CAPTCHA"
-                    class="captcha-image"
-                  />
-                  <input type="text" placeholder="Enter CAPTCHA" required />
-                </div>
-                <button type="submit">Send Message</button>
-              </form>
+    <header>
+      <!-- header-top -->
+      <div class="header__top hidden">
+        <div class="container--fluid">
+          <div class="header__top-wrapper flex items-center justify-between">
+            <!-- contact detail  -->
+            <div class="header__top-contact flex items-center gap-8">
+              <a class="header__top-contact-item flex items-center gap-2 py-1">
+                <span><i class="fa-solid fa-phone"></i> </span>
+                <span>97618447034</span>
+              </a>
+              <a class="header__top-contact-item flex items-center gap-2 py-1">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>info@akhil.com.np</span>
+              </a>
             </div>
-            <div class="contact__info">
-              <div class="contact__details">
-                <h1 class="capitalize">akhil Nepal Pharmacy Council (NPC)</h1>
+            <!-- social links  -->
+            <div class="header__top-social flex items-center gap-4">
+              <a class="header__top-social-item py-1">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a class="header__top-social-item py-1">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header mid  -->
+      <div class="header__mid py-2">
+        <div class="container--fluid">
+          <div class="header__mid-wrapper flex items-center justify-between">
+            <!-- logo  -->
+            <div class="header__logo">
+              <div class="header__logo-img">
+                <img
+                  src="../assets/logo/logo.png"
+                  alt="akhil nepal pharmacy council"
+                />
+              </div>
+            </div>
+
+            <!-- nepal flag  -->
+
+            <div class="header__nepal-flag hidden">
+              <div class="header__nepal-flag-img">
+                <img src="../assets/images/np_flag.gif" alt="flag of nepal" />
+              </div>
+            </div>
+
+            <!-- mobile toggle btn -->
+            <div class="header__mob-nav-toggle">
+              <!-- hamburger icon  -->
+              <span id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+              <!-- cross icon  -->
+              <span id="cross" class="hidden">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main  -->
+      <div class="header__main hidden">
+        <div class="container--fluid">
+          <div class="header__main-wrapper">
+            <nav class="header__main-nav-links flex items-center">
+              <!-- link item -->
+              <div class="header__main-nav-link capitalize">
+                <a class="inline-block px-2 py-3" href="/">home</a>
+              </div>
+
+              <!-- link item with dropdown  -->
+              <div
+                class="header__main-nav-link header__main-nav-link--dropdown relative"
+              >
+                <button class="inline-block px-2 py-3 capitalize">
+                  <span>background</span>
+                  <span class="header__main-link-dropbtn-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </button>
+                <div class="header__main-nav-dropdown absolute left-0">
+                  <nav class="header__main-nav-dropdown-links flex flex-col">
+                    <a class="header__main-dropdown-link" href="/about"
+                      >about</a
+                    >
+                    <a class="header__main-dropdown-link" href="/members"
+                      >members</a
+                    >
+                  </nav>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE NAV  -->
+      <div class="header__mob-nav fixed left-0 w-full" id="mobile-nav">
+        <nav class="header__mob-nav-links">
+          <div class="header__mob-nav-link">
+            <a class="header__mob-nav-link-item" href="/">home</a>
+          </div>
+          <!-- drop down link  -->
+          <div class="header__mob-nav-link header__nav-link--dropdown">
+            <button
+              class="header__mob-nav-link-item header__mob-nav-link-item--dropdown"
+            >
+              <span> about </span>
+              <span class="header__mob-drop-icon--right">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+              <span class="header__mob-drop-icon--down hidden">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </button>
+            <div class="header__mob-dropdown hidden">
+              <nav class="header__mob-dropdown-links flex flex-col">
+                <a href="/staffs" class="header__mob-dropdown-link">Staffs</a>
+                <a href="/board-memebers" class="header__mob-dropdown-link"
+                  >Board Members</a
+                >
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="container--fluid">
+        <div class="main__wrapper">
+          <h1 class="capitalize">contact us</h1>
+          <div class="contact flex flex-col gap-8">
+            <div class="contact__info__form">
+              <div class="contact__form">
+                <form class="flex flex-col gap-4" action="">
+                  <input
+                    class="capitalize py-2"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="name"
+                  />
+                  <input
+                    class="capitalize py-2"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="email"
+                  />
+                  <input
+                    class="capitalize py-2"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="mobile number"
+                  />
+                  <textarea
+                    class="px-2 capitalize"
+                    placeholder="message"
+                    name="message"
+                    id="message"
+                    cols="50"
+                    rows="10"
+                  ></textarea>
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LdigjUqAAAAAMoSWmYZeRhBpnZ2NI8P3jcKf5aT"
+                  ></div>
+
+                  <button
+                    class="g-recaptcha"
+                    data-sitekey="6LdigjUqAAAAAMoSWmYZeRhBpnZ2NI8P3jcKf5aT"
+                    data-callback="onSubmit"
+                    data-action="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+              <div class="contact__info">
+                <h2 class="capitalize">akhil Nepal Pharmacy Council (NPC)</h2>
                 <p>Bijulibazar, New Baneshwor, Kathmandu, Nepal</p>
                 <p>Phone: <a href="tel:+97714790747">+977 (0)1 4790747</a></p>
                 <p>
@@ -66,21 +211,21 @@
                   </a>
                 </p>
               </div>
-              <div class="contact__map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14759.747757876043!2d85.34483255250703!3d27.671067403145898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1724817468128!5m2!1sen!2snp"
-                  width="100%"
-                  height="300"
-                  style="border: 0"
-                  allowfullscreen="true"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+            </div>
+            <div class="contact__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14759.747757876043!2d85.34483255250703!3d27.671067403145898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1724817468128!5m2!1sen!2snp"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
