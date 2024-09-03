@@ -1,58 +1,4 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
-:root {
-  --primary-font-family: "Lato", sans-serif;
-  --primary-color: #003893;
-  --secondary-color: #dc143c;
-  --ternary-color: #00a550;
-  --white-color: #fff;
-  --primary-font-color: #000025;
-  --sidebar-background-color: #f4f4f4;
-  --content-box-shadow: #0000001a;
-  --member-card-background-color: #f9f9f9;
-
-  /* spacing  */
-  --spacing-1: 0.25rem;
-  --spacing-2: 0.5rem;
-  --spacing-3: 0.75rem;
-  --spacing-4: 1rem;
-  --spacing-5: 1.25rem;
-  --spacing-6: 1.5rem;
-  --spacing-8: 2rem;
-  --spacing-10: 2.5rem;
-  --spacing-12: 3rem;
-  --spacing-16: 4rem;
-  --spacing-20: 5rem;
-  --spacing-24: 6rem;
-  --spacing-32: 8rem;
-
-  /* font weight  */
-  --fontWeight-normal: 400;
-  --fontWeight-medium: 500;
-  --fontWeight-semibold: 600;
-  --fontWeight-bold: 700;
-  --fontWeight-extrabold: 800;
-  --fontWeight-black: 900;
-
-  /* 1.200 Minor Third Type Scale */
-  --fontSize-0: 0.833rem;
-  --fontSize-1: 1.1rem;
-  --fontSize-2: 1.2rem;
-  --fontSize-3: 1.44rem;
-  --fontSize-4: 1.728rem;
-  --fontSize-5: 2.074rem;
-  --fontSize-6: 2.488rem;
-  --fontSize-7: 2.986rem;
-  --fontSize-root: 1rem;
-
-  /* line height  */
-  --lineHeight-none: 1;
-  --lineHeight-tight: 1.1;
-  --lineHeight-normal: 1.5;
-  --lineHeight-relaxed: 1.625;
-}
-
 *,
 *::before,
 *::after {
@@ -60,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 
 /* header top  */
 .header__top {
@@ -101,10 +46,9 @@
 
 button:hover {
   border-color: var(--primary-color);
-
+}
 .header__main-nav-link:hover {
   background-color: var(--secondary-color);
-
 }
 
 .header__main-nav-link--dropdown:hover .header__main-nav-dropdown {
@@ -185,20 +129,8 @@ button:hover {
   display: block;
 }
 
-
-.block {
-  display: block;
-}
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
-.justify-center {
-  justify-content: center;
-
 .header__mob-dropdown-hide .header__mob-drop-icon--down {
   display: block;
-
 }
 
 .header__mob-dropdown-hide .header__mob-drop-icon--right {
@@ -206,10 +138,6 @@ button:hover {
 }
 
 /* hero  */
-
-.hero__wrapper {
-  /* dis */
-}
 
 /* hero: news */
 .hero__tabs,
@@ -230,7 +158,6 @@ button:hover {
   background-color: var(--secondary-color);
 }
 
-
 .text-left {
   text-align: left;
 }
@@ -242,7 +169,7 @@ button:hover {
 }
 .gap-1 {
   gap: var(--spacing-1);
-  }
+}
 [data-tab-content],
 [data-events-tab-content] {
   display: none;
@@ -291,14 +218,6 @@ button:hover {
   font-weight: var(--fontWeight-semibold);
 }
 
-/* image carousel  */
-.hero__highlights {
-  /* border: 1px solid red; */
-}
-.carousel {
-  /* border: 1px solid purple; */
-}
-
 .carousel-inner {
   position: relative;
   min-height: 400px;
@@ -313,7 +232,6 @@ button:hover {
 
 .carousel-navigation {
   position: absolute;
-  /* border: 2px solid yellow; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -328,9 +246,7 @@ button:hover {
   color: var(--white-color);
 }
 
-.carousel-navigation button#next {
-  /* right: 0; */
-}
+
 
 /* about  */
 .about__view-more,
@@ -520,13 +436,12 @@ footer {
   font-weight: var(--fontWeight-semibold);
 }
 
-
 .container--fluid {
   max-width: 1380px;
   width: 90%;
   margin: 0 auto;
-  }
-  
+}
+
 .press__card-description--right p {
   font-size: var(--fontSize-0);
   margin-top: 0.5rem;

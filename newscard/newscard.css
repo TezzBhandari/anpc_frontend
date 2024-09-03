@@ -1,0 +1,44 @@
+.newscard {
+  margin-top: 2rem;
+  width: 300px;
+  min-height: 100%;
+  max-height: 400px;
+  position: relative;
+}
+.newscard img,
+.news__card .pdf-viewer {
+  display: block;
+  height: 100%;
+}
+.pdfcard {
+  height: 300px;
+  box-shadow: 0 2px 2px 0 var(--content-box-shadow);
+}
+.pdfcard .news__content {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.pdfcard .news__content h2 {
+  color: var(--white-color);
+}
+.pdfcard .pdf-viewer {
+  height: 100%; /* Makes the PDF viewer fill the card */
+}
+.news__content {
+  position: absolute;
+  background-color: var(--member-card-background-color);
+  box-shadow: 0 2px 2px 0 var(--content-box-shadow);
+  bottom: 0;
+  right: 0;
+  /* border-top-left-radius: 20%; */
+  padding: 0.5rem;
+  z-index: 1;
+}
+.news__content h2 {
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+.news__date {
+  font-weight: var(--fontWeight-bold);
+}

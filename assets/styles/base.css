@@ -6,6 +6,9 @@
   --secondary-color: #dc143c;
   --white-color: #fff;
   --primary-font-color: #000025;
+  --sidebar-background-color: #f4f4f4;
+  --content-box-shadow: #0000001a;
+  --member-card-background-color: #f9f9f9;
 
   /* spacing  */
   --spacing-1: 0.25rem;

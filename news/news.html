@@ -6,23 +6,281 @@
     <title>newslist</title>
     <link rel="stylesheet" href="../assets/styles/normalize.css" />
     <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/base.css" />
+    <link rel="stylesheet" href="../assets/styles/media.css" />
     <link rel="stylesheet" href="./news.css" />
   </head>
   <body>
     <div class="container--fluid">
-      <div class="main__wrapper"></div>
-      <!-- news listing section  -->
-       <h1 class="capitalize text-center">news</h1>
-      <div class="news__cards flex-col gap-4">
-        <!-- <div class="news__card">
-          <img src="../" alt="" class="news__thumbnail" />
-          <div class="news__content">
-            <h2 class="news__title"></h2>
-            <h6 class="news__date"></h6>
-            <p class="news__description"></p>
+      <div class="main__wrapper">
+        <header>
+          <!-- header-top -->
+          <div class="header__top hidden">
+            <div class="container--fluid">
+              <div
+                class="header__top-wrapper flex items-center justify-between"
+              >
+                <!-- contact detail  -->
+                <div class="header__top-contact flex items-center gap-8">
+                  <a
+                    class="header__top-contact-item flex items-center gap-2 py-1"
+                  >
+                    <span><i class="fa-solid fa-phone"></i> </span>
+                    <span>97618447034</span>
+                  </a>
+                  <a
+                    class="header__top-contact-item flex items-center gap-2 py-1"
+                  >
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <span>info@akhil.com.np</span>
+                  </a>
+                </div>
+                <!-- social links  -->
+                <div class="header__top-social flex items-center gap-4">
+                  <a class="header__top-social-item py-1">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                  <a class="header__top-social-item py-1">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div> -->
+
+          <!-- header mid  -->
+          <div class="header__mid py-2">
+            <div class="container--fluid">
+              <div
+                class="header__mid-wrapper flex items-center justify-between"
+              >
+                <!-- logo  -->
+                <div class="header__logo">
+                  <div class="header__logo-img">
+                    <img
+                      src="../assets/images/logo/Logo.svg"
+                      alt="akhil nepal pharmacy council"
+                    />
+                  </div>
+                </div>
+
+                <!-- nepal flag  -->
+
+                <div class="header__nepal-flag hidden">
+                  <div class="header__nepal-flag-img">
+                    <img
+                      src="../assets/images/np_flag.gif"
+                      alt="flag of nepal"
+                    />
+                  </div>
+                </div>
+
+                <!-- mobile toggle btn -->
+                <div class="header__mob-nav-toggle">
+                  <!-- hamburger icon  -->
+                  <span id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                  </span>
+                  <!-- cross icon  -->
+                  <span id="cross" class="hidden">
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- header main  -->
+          <div class="header__main hidden">
+            <div class="container--fluid">
+              <div class="header__main-wrapper">
+                <nav class="header__main-nav-links flex items-center">
+                  <!-- link item -->
+                  <div class="header__main-nav-link capitalize">
+                    <a class="inline-block px-2 py-3" href="/">home</a>
+                  </div>
+
+                  <!-- link item with dropdown  -->
+                  <div
+                    class="header__main-nav-link header__main-nav-link--dropdown relative"
+                  >
+                    <button class="inline-block px-2 py-3 capitalize">
+                      <span>background</span>
+                      <span class="header__main-link-dropbtn-icon">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </span>
+                    </button>
+                    <div class="header__main-nav-dropdown absolute left-0">
+                      <nav
+                        class="header__main-nav-dropdown-links flex flex-col"
+                      >
+                        <a class="header__main-dropdown-link" href="/about"
+                          >about</a
+                        >
+                        <a class="header__main-dropdown-link" href="/members"
+                          >members</a
+                        >
+                      </nav>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOBILE NAV  -->
+          <div class="header__mob-nav fixed left-0 w-full" id="mobile-nav">
+            <nav class="header__mob-nav-links">
+              <div class="header__mob-nav-link">
+                <a class="header__mob-nav-link-item" href="/">home</a>
+              </div>
+              <!-- drop down link  -->
+              <div class="header__mob-nav-link header__nav-link--dropdown">
+                <button
+                  class="header__mob-nav-link-item header__mob-nav-link-item--dropdown"
+                >
+                  <span> about </span>
+                  <span class="header__mob-drop-icon--right">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </span>
+                  <span class="header__mob-drop-icon--down hidden">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </span>
+                </button>
+                <div class="header__mob-dropdown hidden">
+                  <nav class="header__mob-dropdown-links flex flex-col">
+                    <a href="/staffs" class="header__mob-dropdown-link"
+                      >Staffs</a
+                    >
+                    <a href="/board-memebers" class="header__mob-dropdown-link"
+                      >Board Members</a
+                    >
+                  </nav>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <!-- news listing section  -->
+        <div class="news__wrapper">
+          <h1 class="capitalize text-center">news</h1>
+          <div class="news__cards flex-col gap-4">
+            <!-- <div class="news__card">
+            <img src="../" alt="" class="news__thumbnail" />
+            <div class="news__content">
+              <h2 class="news__title"></h2>
+              <h6 class="news__date"></h6>
+              <p class="news__description"></p>
+            </div>
+          </div> -->
+          </div>
+        </div>
       </div>
+      <footer>
+        <div class="container--fluid py-2">
+          <div class="footer__content-wrapper">
+            <div class="footer__main-content">
+              <!-- one  -->
+              <div class="footer__main-content-left">
+                <div class="footer__contact-info">
+                  <!-- footer logo -->
+                  <div class="footer__logo">
+                    <div class="footer__logo-img">
+                      <img src="./assets/logo/logo.png" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="footer__get-in-touch">
+                    <p class="flex items-center gap-2">
+                      <span>
+                        <i class="fa-solid fa-phone"></i>
+                      </span>
+                      <span>977&#45;9761819535</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                      </span>
+                      <span>shankhamul, kathmandu</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                      <span>
+                        <i class="fa-solid fa-envelope"></i>
+                      </span>
+                      <span>registar@pharmacycouncil.org.np</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="footer__quick-links">
+                  <h3>Quick Links</h3>
+                  <div class="footer__quick-links-container flex flex-col">
+                    <a
+                      href="http://"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer__quick-link"
+                      >News and Notice</a
+                    >
+                    <a
+                      href="http://"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer__quick-link"
+                      >Highlights</a
+                    >
+                    <a
+                      href="http://"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer__quick-link"
+                      >Events</a
+                    ><a
+                      href="http://"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="footer__quick-link"
+                      >Members</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- two  -->
+              <div class="footer__main-content-right">
+                <div class="footer__links">
+                  <h3>Links</h3>
+                  <div class="footer__links-container flex flex-col">
+                    <a href="/" class="footer__link">home</a
+                    ><a href="/contact" class="footer__link">contact</a
+                    ><a href="/about" class="footer__link">about</a>
+                  </div>
+                </div>
+
+                <div class="footer__connect flex flex-col gap-10">
+                  <div class="footer__connect-container">
+                    <h3>Connect With Us</h3>
+                    <div class="footer__socials-container flex flex-col">
+                      <a href="" class="footer__social flex gap-2">
+                        <span>
+                          <i class="fa-brands fa-square-facebook"></i>
+                        </span>
+                        <span>facebook</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright-separator"></div>
+            <div class="footer__copyright-content">
+              <h2>
+                Copyright 2024, Nepal Pharmacy Council. All rights reserved.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./news.js"></script>
   </body>
