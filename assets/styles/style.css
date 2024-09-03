@@ -333,6 +333,12 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer__main-content-right {
+  /* flex: 1 */
+  flex: 1 1 0%;
 }
 
 .copyright-separator {
@@ -431,5 +437,20 @@ footer {
 
 .press__card-description--right p {
   font-size: var(--fontSize-0);
-  margin-top: 0.5rem;
+  /* margin: 0.5rem 0; */
+}
+
+.footer__suscribe-btn {
+  background-color: var(--secondary-color);
+}
+
+.footer__news-letter-input input {
+  border: none;
+  outline: none;
+}
+
+.footer__suscribe-btn {
+  font-size: var(--fontSize-2);
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }

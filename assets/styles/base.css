@@ -199,6 +199,10 @@ h6 {
   align-items: center;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .flex-col {
   flex-direction: column;
 }

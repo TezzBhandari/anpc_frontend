@@ -5,6 +5,14 @@
   .members__card {
     flex: 0 0 80%;
   }
+
+  .footer__news-letter-form {
+    flex-direction: row;
+  }
+
+  .footer__news-letter-input {
+    flex: 1 1 0%;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -31,6 +39,15 @@
   .footer__main-content {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .footer__top-content {
+    margin-left: 65%;
+  }
+
+  .footer__main-content-right {
+    /* flex: 1 */
+    gap: 6rem;
   }
 }
 
@@ -144,6 +161,20 @@
   }
   .press__card--left {
     height: 100%;
+  }
+
+  .footer__news-letter-wrapper {
+    display: none;
+  }
+
+  .footer__news-letter-wrapper--lg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer__news-letter-input--lg input {
+    min-width: 500px;
   }
 }
 
