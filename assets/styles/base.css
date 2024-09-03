@@ -199,6 +199,10 @@ h6 {
   align-items: center;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -219,6 +223,10 @@ h6 {
 /* width  */
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .gap-1 {

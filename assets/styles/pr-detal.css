@@ -1,0 +1,108 @@
+.pgd__press__header {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.pgd__press__header h2 {
+  margin: 0;
+  font-size: var(--fontSize-3);
+  font-weight: var(--fontWeight-semibold);
+  line-height: 3rem;
+}
+
+.pgd__content {
+  margin-top: var(--spacing-3);
+}
+
+.pgd__press-preview-img {
+  display: flex;
+  align-items: stretch;
+  height: 350px;
+}
+
+.pgd__press-preview-img img {
+  object-position: center center;
+}
+.pgd__press-preview-description {
+  margin-top: 1.5rem;
+}
+
+.pgd__press-preview-description h3 {
+  margin: 0;
+  font-size: var(--fontSize-1);
+}
+
+.pgd__press-preview-description p {
+  margin-top: var(--spacing-1);
+  line-height: var(--lineHeight-relaxed);
+  font-weight: var(--fontWeight-normal);
+}
+
+.pgd__press-preview-author {
+  line-height: var(--lineHeight-relaxed);
+  font-weight: var(--fontWeight-normal);
+}
+
+.pgd__content-right-header p {
+  font-size: var(--fontSize-2);
+  font-weight: var(--fontWeight-semibold);
+  color: var(--primary-color);
+}
+
+.pgd__content-right-header p {
+  font-size: var(--fontSize-2);
+  font-weight: var(--fontWeight-semibold);
+  color: var(--primary-color);
+}
+
+.pgd__content-right-header a {
+  font-size: var(--fontSize-0);
+  font-weight: var(--fontWeight-semibold);
+  color: var(--primary-color);
+}
+
+.pgd__press-item-description {
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.pgd__press-item-description span {
+  font-size: var(--fontSize-0);
+}
+
+.pgd__content-right-main {
+  margin-top: 0.5rem;
+}
+
+.pgd__press-item-description h2 {
+  line-height: var(--lineHeight-normal);
+  margin: 0;
+  font-size: var(--fontSize-0);
+  letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .pgd__content-wrapper {
+    flex-direction: row;
+  }
+
+  .pgd__content-left {
+    width: 70%;
+  }
+
+  .pgd__content-right {
+    width: 30%;
+  }
+
+  .pgd__content-right-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .pgd__content-right-main {
+    max-height: 140vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

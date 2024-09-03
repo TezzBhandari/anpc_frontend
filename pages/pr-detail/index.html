@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/styles/base.css" />
+    <link rel="stylesheet" href="../../assets/styles/style.css" />
+    <link rel="stylesheet" href="../../assets/styles/media.css" />
+    <link rel="stylesheet" href="../../assets/styles/pr-detal.css" />
+
+    <title>Press Release</title>
+  </head>
+  <body>
+    <header>
+      <!-- header-top -->
+      <div class="header__top hidden">
+        <div class="container--fluid">
+          <div class="header__top-wrapper flex items-center justify-between">
+            <!-- contact detail  -->
+            <div class="header__top-contact flex items-center gap-8">
+              <a class="header__top-contact-item flex items-center gap-2 py-1">
+                <span><i class="fa-solid fa-phone"></i> </span>
+                <span>97618447034</span>
+              </a>
+              <a class="header__top-contact-item flex items-center gap-2 py-1">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <span>info@akhil.com.np</span>
+              </a>
+            </div>
+            <!-- social links  -->
+            <div class="header__top-social flex items-center gap-4">
+              <a class="header__top-social-item py-1">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a class="header__top-social-item py-1">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header mid  -->
+      <div class="header__mid py-2">
+        <div class="container--fluid">
+          <div class="header__mid-wrapper flex items-center justify-between">
+            <!-- logo  -->
+            <div class="header__logo">
+              <div class="header__logo-img">
+                <img
+                  src="../../assets/logo/logo.png"
+                  alt="akhil nepal pharmacy council"
+                />
+              </div>
+            </div>
+
+            <!-- nepal flag  -->
+
+            <div class="header__nepal-flag hidden">
+              <div class="header__nepal-flag-img">
+                <img
+                  src="../../assets/images/np_flag.gif"
+                  alt="flag of nepal"
+                />
+              </div>
+            </div>
+
+            <!-- mobile toggle btn -->
+            <div class="header__mob-nav-toggle">
+              <!-- hamburger icon  -->
+              <span id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+              </span>
+              <!-- cross icon  -->
+              <span id="cross" class="hidden">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main  -->
+      <div class="header__main hidden">
+        <div class="container--fluid">
+          <div class="header__main-wrapper">
+            <nav class="header__main-nav-links flex items-center">
+              <!-- link item -->
+              <div class="header__main-nav-link capitalize">
+                <a class="inline-block px-2 py-3" href="/">home</a>
+              </div>
+
+              <!-- link item with dropdown  -->
+              <div
+                class="header__main-nav-link header__main-nav-link--dropdown relative"
+              >
+                <button class="inline-block px-2 py-3 capitalize">
+                  <span>background</span>
+                  <span class="header__main-link-dropbtn-icon">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                </button>
+                <div class="header__main-nav-dropdown absolute left-0">
+                  <nav class="header__main-nav-dropdown-links flex flex-col">
+                    <a class="header__main-dropdown-link" href="/about"
+                      >about</a
+                    >
+                    <a class="header__main-dropdown-link" href="/members"
+                      >members</a
+                    >
+                  </nav>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE NAV  -->
+      <div class="header__mob-nav fixed left-0 w-full" id="mobile-nav">
+        <nav class="header__mob-nav-links">
+          <div class="header__mob-nav-link">
+            <a class="header__mob-nav-link-item" href="/">home</a>
+          </div>
+          <!-- drop down link  -->
+          <div class="header__mob-nav-link header__nav-link--dropdown">
+            <button
+              class="header__mob-nav-link-item header__mob-nav-link-item--dropdown"
+            >
+              <span> about </span>
+              <span class="header__mob-drop-icon--right">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+              <span class="header__mob-drop-icon--down hidden">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </button>
+            <div class="header__mob-dropdown hidden">
+              <nav class="header__mob-dropdown-links flex flex-col">
+                <a href="/staffs" class="header__mob-dropdown-link">Staffs</a>
+                <a href="/board-memebers" class="header__mob-dropdown-link"
+                  >Board Members</a
+                >
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container--fluid py-3">
+          <div class="pgd__press-wrapper">
+            <div class="pgd__press__header py-3">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <div class="pgd__press-detail flex px-2 gap-6">
+                <p class="pgd__press-detail-date flex gap-2">
+                  <span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </span>
+                  <span>4 shrawan, 2081</span>
+                </p>
+                <p class="pgd__press-detail-time flex gap-2">
+                  <span>
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                  <span>6:45 AM</span>
+                </p>
+              </div>
+            </div>
+            <div class="pgd__content">
+              <div class="pgd__content-wrapper flex flex-col gap-4">
+                <div class="pgd__content-left">
+                  <div class="pgd__content-left-wrapper">
+                    <div class="pgd__press-preview-img">
+                      <img
+                        class="block w-full h-full"
+                        src="../../assets/images/download.jpeg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="pgd__press-preview-description">
+                      <h3>Press</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum modi quaerat tempora rerum obcaecati. Nemo veniam
+                        cum error aliquam ipsa similique delectus pariatur
+                        impedit facilis eligendi! Molestias, harum. Laborum
+                        libero enim nihil quibusdam tempore, non ullam delectus
+                        voluptatem itaque illum, sequi repudiandae corrupti
+                        possimus in labore optio veniam id eius vero atque iusto
+                        suscipit? Asperiores rem blanditiis architecto natus
+                        sit? Doloribus voluptatem repellendus perspiciatis
+                        nesciunt explicabo, corrupti voluptatibus beatae velit.
+                        Fugit error laudantium expedita necessitatibus tenetur
+                        at quae eius inventore hic sint voluptas, distinctio nam
+                        repudiandae, praesentium ab consequatur asperiores!
+                        Distinctio, maxime? Inventore, culpa dolorum? Unde
+                        similique placeat nobis aut impedit vel consequatur
+                        repellat voluptatum at ratione dolorum voluptatem
+                        veritatis, enim corporis. Sapiente, blanditiis deserunt
+                        iure exercitationem non magnam sunt doloremque quod,
+                        quibusdam laborum a soluta consectetur. Ipsum earum
+                        eveniet recusandae iusto. Eius blanditiis perspiciatis
+                        cumque vero dolore impedit, architecto nisi! Impedit
+                        reprehenderit commodi quisquam sit omnis expedita.
+                        Autem, iusto!
+                      </p>
+                      <div class="pgd__press-preview-author flex flex-col my-1">
+                        <span>Mukunt Neupane</span>
+                        <span>Parbakta (dinosaures)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pgd__content-right">
+                  <div class="pgd__content-right-wrapper">
+                    <div
+                      class="pgd__content-right-header flex items-center justify-between"
+                    >
+                      <p>Related Press</p>
+                      <a class="flex items-center gap-2" href="/press"
+                        ><span>view all</span
+                        ><span> <i class="fa-solid fa-angles-right"></i> </span
+                      ></a>
+                    </div>
+                    <div class="pgd__content-right-main flex flex-col gap-4">
+                      <div class="pgd__press-list-item flex gap-4 relative">
+                        <a class="absolute inset-0" href="/boards"></a>
+                        <div class="pgd__press-item-img flex-1">
+                          <img
+                            class="block"
+                            src="../../assets/images/download.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pgd__press-item-description flex-1">
+                          <span>2081-04-14, 6:18 AM</span>
+                          <h2>Lorem Ipsum In The Hood kendria sarkar parit</h2>
+                        </div>
+                      </div>
+                      <div class="pgd__press-list-item flex gap-4 relative">
+                        <a class="absolute inset-0" href="/boards"></a>
+                        <div class="pgd__press-item-img flex-1">
+                          <img
+                            class="block"
+                            src="../../assets/images/download.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pgd__press-item-description flex-1">
+                          <span>2081-04-14, 6:18 AM</span>
+                          <h2>Lorem Ipsum In The Hood kendria sarkar parit</h2>
+                        </div>
+                      </div>
+
+                      <div class="pgd__press-list-item flex gap-4 relative">
+                        <a class="absolute inset-0" href="/boards"></a>
+                        <div class="pgd__press-item-img flex-1">
+                          <img
+                            class="block"
+                            src="../../assets/images/download.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pgd__press-item-description flex-1">
+                          <span>2081-04-14, 6:18 AM</span>
+                          <h2>Lorem Ipsum In The Hood kendria sarkar parit</h2>
+                        </div>
+                      </div>
+
+                      <div class="pgd__press-list-item flex gap-4 relative">
+                        <a class="absolute inset-0" href="/boards"></a>
+                        <div class="pgd__press-item-img flex-1">
+                          <img
+                            class="block"
+                            src="../../assets/images/download.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pgd__press-item-description flex-1">
+                          <span>2081-04-14, 6:18 AM</span>
+                          <h2>Lorem Ipsum In The Hood kendria sarkar parit</h2>
+                        </div>
+                      </div>
+                      <div class="pgd__press-list-item flex gap-4 relative">
+                        <a class="absolute inset-0" href="/boards"></a>
+                        <div class="pgd__press-item-img flex-1">
+                          <img
+                            class="block"
+                            src="../../assets/images/download.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pgd__press-item-description flex-1">
+                          <span>2081-04-14, 6:18 AM</span>
+                          <h2>Lorem Ipsum In The Hood kendria sarkar parit</h2>
+                        </div>
+                      </div>
+                      <div class="pgd__press-list-item flex gap-4 relative">
+                        <a class="absolute inset-0" href="/boards"></a>
+                        <div class="pgd__press-item-img flex-1">
+                          <img
+                            class="block"
+                            src="../../assets/images/download.jpeg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="pgd__press-item-description flex-1">
+                          <span>2081-04-14, 6:18 AM</span>
+                          <h2>Lorem Ipsum In The Hood kendria sarkar parit</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container--fluid py-2">
+        <div class="footer__content-wrapper">
+          <div class="footer__main-content">
+            <!-- one  -->
+            <div class="footer__main-content-left">
+              <div class="footer__contact-info">
+                <!-- footer logo -->
+                <div class="footer__logo">
+                  <div class="footer__logo-img">
+                    <img src="../../assets/logo/logo.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="footer__get-in-touch">
+                  <p class="flex items-center gap-2">
+                    <span>
+                      <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <span>977&#45;9761819535</span>
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <span>shankhamul, kathmandu</span>
+                  </p>
+                  <p class="flex items-center gap-2">
+                    <span>
+                      <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <span>registar@pharmacycouncil.org.np</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="footer__quick-links">
+                <h3>Quick Links</h3>
+                <div class="footer__quick-links-container flex flex-col">
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__quick-link"
+                    >News and Notice</a
+                  >
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__quick-link"
+                    >Highlights</a
+                  >
+                  <a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__quick-link"
+                    >Events</a
+                  ><a
+                    href="http://"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer__quick-link"
+                    >Members</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- two  -->
+            <div class="footer__main-content-right">
+              <div class="footer__top-content">
+                <div class="footer__links">
+                  <h3>Links</h3>
+                  <div class="footer__links-container flex flex-col">
+                    <a href="/" class="footer__link">home</a
+                    ><a href="/contact" class="footer__link">contact</a
+                    ><a href="/about" class="footer__link">about</a>
+                  </div>
+                </div>
+
+                <div class="footer__connect flex flex-col">
+                  <div class="footer__connect-container">
+                    <h3>Connect With Us</h3>
+                    <div class="footer__socials-container flex flex-col">
+                      <a href="" class="footer__social flex gap-2">
+                        <span>
+                          <i class="fa-brands fa-square-facebook"></i>
+                        </span>
+                        <span>facebook</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- new letter  -->
+              <div class="footer__news-letter-wrapper">
+                <form class="footer__news-letter-form flex flex-col gap-2">
+                  <div class="footer__news-letter-input">
+                    <input
+                      class="block h-full w-full px-2 py-2"
+                      type="email"
+                      placeholder="Your email address"
+                      required
+                    />
+                  </div>
+                  <button class="footer__suscribe-btn px-3 py-1">
+                    suscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- large screen new letter  -->
+          <div class="footer__news-letter-wrapper--lg hidden">
+            <form class="footer__news-letter-form flex flex-col gap-2">
+              <div
+                class="footer__news-letter-input footer__news-letter-input--lg"
+              >
+                <input
+                  class="block h-full w-full px-2 py-2"
+                  type="email"
+                  placeholder="Your email address"
+                  required
+                />
+              </div>
+              <button class="footer__suscribe-btn px-3 py-1">suscribe</button>
+            </form>
+          </div>
+          <div class="copyright-separator"></div>
+          <div class="footer__copyright-content">
+            <h2>
+              Copyright 2024, Nepal Pharmacy Council. All rights reserved.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
