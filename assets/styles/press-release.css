@@ -79,6 +79,9 @@
 
 @media screen and (min-width: 1024px) {
   .pg__press-latest {
+    margin-bottom: 4rem;
+  }
+  .pg__press-latest {
     display: flex;
     gap: 2rem;
   }
